@@ -1,7 +1,7 @@
 # machine-learning
 import numpy as np 
 print ("dataset analisis de tiempo en diferentes metodos")
-time = np.array([14, 23, 34], [12, 15, 7], [16, 19, 20])
+time = np.array ([[14, 23, 34], [12, 15, 7], [16, 19, 20]])
 print(time)
 print(f"Tamaño matriz: {time.shape}")
 print(f"Dimensiones: {time.ndim}")
@@ -11,17 +11,17 @@ print(f"Ultimo elemento: {time[-1, -1]}")
 print(f"Primera Fila: {time[0, :]}")
 print(f"Ultima Columna: {time[:, -1]}")
 # Promedio
-prom = np.mean(tiempo)
+prom = np.mean(time)
 print("El promedio de los tiempos es:", prom)
 
 # Desviacion Estandar
-devstd = np.std(tiempo)
+devstd = np.std(time)
 print(f"La desviacion estandar de los tiempos es: {devstd:.2f}")
 
 # Promedio por metodo
-metodoA = np.array([10, 12, 11])
-metodoB = np.array([15, 17, 16])
-metodoC = np.array([20, 22, 21])
+metodoA = np.array([14, 23, 34])
+metodoB = np.array([12, 15, 7])
+metodoC = np.array([16, 19, 20])
 
 promA = np.mean(metodoA)
 promB = np.mean(metodoB)
@@ -35,49 +35,49 @@ desvC = np.std(metodoC)
 print(f"Desv_Estandar de A: {desvA:.2f}, Desv_Estandar de B: {desvB:.2f}, Desv_Estandar de C: {desvC:.2f}")
 
 #Mediana
-mediana = np.median(tiempo)
+mediana = np.median(time)
 print(f"La mediana de los tiempos es: {mediana}")
 
 #Varianza
-varianza = np.var(tiempo)
+varianza = np.var(time)
 print(f"La varianza de los tiempos es: {varianza:.2f}")
 
 #Percentiles
-percentil = np.percentile(tiempo, 50)
+percentil = np.percentile(time, 50)
 print(f"El percentil 50 de los tiempos es: {percentil}")
 
 #Máximo
-maximo = np.max(tiempo)
+maximo = np.max(time)
 print(f"El valor maximo de los tiempos es: {maximo}")
 
 #Mínimo
-minimo = np.min(tiempo)
+minimo = np.min(time)
 print(f"El valor minimo de los tiempos es: {minimo}")
 
 #Rango
-rango = np.max(tiempo) - np.min(tiempo)
+rango = np.max(time) - np.min(time)
 print(f"El rango de los tiempos es: {rango}")
 
 #suma
-suma = np.sum(tiempo)
+suma = np.sum(time)
 print(f"La suma de los tiempos es: {suma}")
 
 #Producto
-producto = np.prod(tiempo)
+producto = np.prod(time)
 print(f"El producto de los tiempos es: {producto}")
 
 #Suma por filas y columnas
-suma_filas = np.sum(tiempo, axis=0)
-suma_columnas = np.sum(tiempo, axis=1)
+suma_filas = np.sum(time, axis=0)
+suma_columnas = np.sum(time, axis=1)
 print("Suma por filas:", suma_filas)
 print("Suma por columnas:", suma_columnas)
 
 #Matriz transpuesta
-transpuesta = np.transpose(tiempo)
+transpuesta = np.transpose(time)
 print("Matriz transpuesta:")
 print(transpuesta)
 
 #Determinante
-determinante = np.linalg.det(tiempo)
+determinante = np.linalg.det(time)
 print("Determinante de la matriz:")
 print(determinante)
